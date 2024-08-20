@@ -298,7 +298,7 @@ Effect Size: The large magnitude of the t-statistic suggests a substantial diffe
 1. Set Up Your Environment in Colab
 """
 
-!pip install streamlit pyngrok
+!pip install streamlit 
 
 """2. Write  Streamlit App Code"""
 

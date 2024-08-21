@@ -336,10 +336,7 @@ Effect Size: The large magnitude of the t-statistic suggests a substantial diffe
 
 """3. Run Your Streamlit App Using Ngrok"""
 
-from pyngrok import ngrok
-
 # Run the Streamlit app
-!streamlit run app.py &
 
 # Expose the app to the web using ngrok
 public_url = ngrok.connect(port='8501')

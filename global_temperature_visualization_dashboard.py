@@ -10,7 +10,7 @@ Original file is located at
 import pandas as pd
 
 # Load the CSV file from the uploaded location
-df = pd.read_csv('/content/Global Temperature.csv')
+df = pd.read_csv('Global Temperature.csv')
  # Display the first few rows of the dataframe
 df.head()
 

@@ -25,18 +25,18 @@ viz_selection = st.sidebar.selectbox('Select Visualization', ['Line Plot', 'Scat
 # Line plot for Annual Anomalies over time
 if viz_selection == 'Line Plot':
     st.subheader('Annual Temperature Anomalies Over Time')
-    fig_line = px.line(filtered_data, x='Year', y='Annual Anomaly', title='Annual Temperature Anomalies Over Time')
+    fig_line = px.line(filtered_data, x='Year', y='  Annual Anomaly', title='Annual Temperature Anomalies Over Time')
     st.plotly_chart(fig_line)
 
     st.subheader('Five-Year vs Ten-Year Temperature Anomaly')
-    fig_line_compare = px.line(filtered_data, x='Year', y=['Five-Year Anomaly', 'Ten-Year Anomaly'], 
+    fig_line_compare = px.line(filtered_data, x='Year', y=[' Five-Year Anomaly', ' Ten-Year Anomaly'], 
                                labels={'value': 'Temperature Anomaly'}, title='Five-Year vs Ten-Year Anomaly')
     st.plotly_chart(fig_line_compare)
 
 # Scatter plot for Monthly Anomaly vs Monthly Uncertainty
 elif viz_selection == 'Scatter Plot':
     st.subheader('Monthly Anomaly vs Monthly Uncertainty')
-    fig_scatter = px.scatter(filtered_data, x='Monthly Anomaly', y='Monthly Unc.',
+    fig_scatter = px.scatter(filtered_data, x='Monthly Anomaly', y=' Monthly Unc.',
                              title='Monthly Anomaly vs Monthly Uncertainty')
     st.plotly_chart(fig_scatter)
 

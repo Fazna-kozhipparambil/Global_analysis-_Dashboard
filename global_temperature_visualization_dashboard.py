@@ -29,7 +29,7 @@ if viz_selection == 'Line Plot':
     st.plotly_chart(fig_line)
 
     st.subheader('Five-Year vs Ten-Year Temperature Anomaly')
-    fig_line_compare = px.line(filtered_data, x='Year', y=[' Five-Year Anomaly', ' Ten-Year Anomaly'], 
+    fig_line_compare = px.line(filtered_data, x='Year', y=['Five-Year Anomaly', ' Ten-Year Anomaly'], 
                                labels={'value': 'Temperature Anomaly'}, title='Five-Year vs Ten-Year Anomaly')
     st.plotly_chart(fig_line_compare)
 
@@ -49,5 +49,5 @@ elif viz_selection == 'Heatmap':
 
 # Additional visualization
 st.subheader('Distribution of Annual Temperature Anomalies')
-fig_hist = px.histogram(filtered_data, x='Annual Anomaly', nbins=20, title='Distribution of Annual Temperature Anomalies')
+fig_hist = px.histogram(filtered_data, x='  Annual Anomaly', nbins=20, title='Distribution of Annual Temperature Anomalies')
 st.plotly_chart(fig_hist)
